@@ -11,7 +11,26 @@
         .product { display: inline-block; width: 30%; margin: 10px; padding: 10px; border: 1px solid #ddd; text-align: center; }
         button { background-color: #007bff; color: white; border: none; padding: 10px; cursor: pointer; }
         #cart { margin-top: 20px; }
-        #checkout { display: none; }
+        meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinneys - Ramadan & Valentine's Collection</title>
+    <style>
+        :root { --primary-color: #00a896; --accent-color: #d63384; --bg-gray: #f8f9fa; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-gray); margin: 0; padding: 20px; }
+        .header { text-align: center; padding: 20px; background: white; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .promo-banner { background: #fff5f7; border: 2px dashed var(--accent-color); padding: 15px; border-radius: 10px; color: var(--accent-color); font-weight: bold; margin-bottom: 20px; text-align: center; }
+        .section-title { color: #333; border-left: 5px solid var(--primary-color); padding-left: 15px; margin: 40px 0 20px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-10px); }
+        .image-container { height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; }
+        .content { padding: 15px; flex-grow: 1; text-align: center; }
+        .product-name { font-size: 15px; font-weight: 600; color: #444; margin-bottom: 10px; height: 45px; overflow: hidden; }
+        .price { font-size: 18px; font-weight: bold; color: var(--primary-color); margin-bottom: 15px; }
+        .add-btn { background: var(--primary-color); color: white; border: none; padding: 10px; width: 100%; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .valentine .add-btn { background: var(--accent-color); }
+        .valentine .price { color: var(--accent-color); }
     </style>
 </head>
 <body>
@@ -42,6 +61,34 @@
                 <p>AED 64/1pic</p>
                 <button onclick="addToCart('Fix Chocolate 🍫 Knafa', 64)">Add to Cart</button>
         </div>
+            div class="container">
+    <div class="product-card">
+        <div class="title">Talking Tables Led Lights Wire Gold</div>
+        <div class="price">AED 60</div>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <div class="title">Gold Celebration Bottle String Lights</div>
+        <div class="price">AED 65</div>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <div class="title">The Party Popper Ramadan Mubarak Bunting</div>
+        <div class="price">AED 35</div>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <div class="title">Hootyballoo Moon & Star Card Banner</div>
+        <div class="price">AED 22</div>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <div class="title">Fiestavibe Ramadan Foil Balloons Set 5s</div>
+        <div class="price">AED 39</div>
         <div id="cart">
             <h2>Your Cart</h2>
             <ul id="cartItems"></ul>
@@ -55,6 +102,82 @@
             <button onclick="payWithCard()">Pay with Visa/Mastercard</button>
             <p>Delivery in Dubai: AED 10 (free over AED 50)</p>
         </div>
+        div class="header">
+    <h1>Spinneys Arabian Ranches 3</h1>
+    <p>Exclusive Ramadan & Valentine's Collection</p>
+</div>
+
+<div class="promo-banner">
+    🌙 Special Offer: Spend AED 250 and get 10% OFF! 💖
+</div>
+
+<h2 class="section-title">Ramadan Decor & Gifting</h2>
+<div class="product-grid">
+    <div class="card">
+        <div class="image-container">
+            
+        </div>
+        <div class="content">
+            <div class="product-name">Talking Tables Led Lights Wire Gold</div>
+            <div class="price">AED 60</div>
+            <button class="add-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-container">
+            [attachment_0](attachment)
+        </div>
+        <div class="content">
+            <div class="product-name">The Party Popper Ramadan Mubarak Bunting</div>
+            <div class="price">AED 35</div>
+            <button class="add-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-container">
+            
+        </div>
+        <div class="content">
+            <div class="product-name">Fiestavibe Eid Mubarak Foil Balloon Gold</div>
+            <div class="price">AED 35</div>
+            <button class="add-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<h2 class="section-title" style="border-color: #d63384;">Valentine's Special Treats</h2>
+<div class="product-grid valentine">
+    <div class="card">
+        <div class="image-container">
+            
+        </div>
+        <div class="content">
+            <div class="product-name">Ferrero Rocher Heart Box 125g</div>
+            <div class="price">AED 55</div>
+            <button class="add-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-container">
+            [attachment_1](attachment)
+        </div>
+        <div class="content">
+            <div class="product-name">Keel Toys Harry Bear With Heart</div>
+            <div class="price">AED 49</div>
+            <button class="add-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-container">
+            
+        </div>
+        <div class="content">
+            <div class="product-name">Betty Crocker Red Velvet Cake Mix</div>
+            <div class="price">AED 26.50</div>
     </div>
     <script>
         let cart = [];
